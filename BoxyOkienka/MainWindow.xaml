@@ -1,0 +1,28 @@
+﻿<Window x:Class="BoxyOkienka.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BoxyOkienka"
+        mc:Ignorable="d"
+        Title="BlackBoxy" Width="1214.165" Height="836.705" Icon="Icon1.ico" ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Button x:Name="draw_btn" Content="Losuj" HorizontalAlignment="Left" Margin="239,745,0,0" VerticalAlignment="Top" Width="75" Click="draw_btn_Click" IsDefault="True" TabIndex="1"/>
+        <Button x:Name="search_btn" Content="Szukaj" HorizontalAlignment="Left" Margin="423,745,0,0" VerticalAlignment="Top" Width="75" Click="search_btn_Click" TabIndex="2"/>
+        <ScrollViewer HorizontalAlignment="Left" Height="152" Margin="10,10,0,0" VerticalAlignment="Top" Width="1150" VerticalScrollBarVisibility="Auto">
+            <TextBlock x:Name="log_blc" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        </ScrollViewer>
+        <ScrollViewer HorizontalAlignment="Left" Height="537" Margin="10,180,0,0" VerticalAlignment="Top" Width="1150" VerticalScrollBarVisibility="Auto">
+            <TextBlock x:Name="all_blc" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" />
+        </ScrollViewer>
+        <Button x:Name="all_boxes" Content="Wyświetl wszystkie boxy" HorizontalAlignment="Left" Margin="660,745,0,0" VerticalAlignment="Top" Width="157" Click="all_boxes_Click" TabIndex="3"/>
+        <Separator HorizontalAlignment="Left" Height="100" Margin="10,120,0,0" VerticalAlignment="Top" Width="1150"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,745,0,0" TextWrapping="Wrap" Text="Ile boxów wylosować?" VerticalAlignment="Top" Height="20" Width="135"/>
+        <TextBox x:Name="howMuch_box" HorizontalAlignment="Left" Height="21" Margin="150,744,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="63"/>
+        <Button x:Name="about_btn" Content="O programie" HorizontalAlignment="Left" Margin="1022,745,0,0" VerticalAlignment="Top" Width="75" Click="about_btn_Click" TabIndex="4"/>
+        <Button x:Name="close_btn" Content="Zamknij" HorizontalAlignment="Left" Margin="892,745,0,0" VerticalAlignment="Top" Width="75" Click="close_btn_Click" IsCancel="True" TabIndex="5"/>
+
+
+
+    </Grid>
+</Window>
